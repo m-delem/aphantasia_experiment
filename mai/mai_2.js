@@ -9,7 +9,7 @@ jatos.onLoad(function () {
                     .setValue("score_mai_reg",
                         survey
                             .getCorrectAnswerCount());
-                $("#mai").hide(); // Hides 'Thank you for ...' message
+                $("#mai").hide(); // Hides completion message
                 jatos.startNextComponent(
                     '{"score_mai_reg":' + survey.data["score_mai_reg"] + '}'
                 );
