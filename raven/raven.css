@@ -1,11 +1,11 @@
-#raven_matrices{
+#raven_matrices {
     --primary: #007753;
-    --background: #d6d6d642;
+    --background: #ffffff;
     --background-dim: #ffffff;
-    --background-dim-light: #f9f9f9;
+    --background-dim-light: #bdbdbd;
     --primary-foreground: #ffffff;
     --foreground: #000000;
     --base-unit: 8px;
-        }
-/* You can add your custom css here.*/
+}
 
+/* You can add your custom css here.*/
