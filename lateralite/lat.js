@@ -4,11 +4,9 @@ jatos.onLoad(function () {
     survey
         .onComplete
         .add(
-            function (result) {
+            function () {
                 $("#lat").hide(); // Hides completion message
-                jatos.startNextComponent(result.data);
+                jatos.startNextComponent(survey.data);
             });
-
     $("#lat").Survey({ model: survey });
-    jatos.addAbortButton();
 });
