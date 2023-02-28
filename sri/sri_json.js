@@ -1,5 +1,8 @@
 
 const json = {
+  "showProgressBar": "bottom",
+  "showTimerPanel": "top",
+  "maxTimeToFinishPage": 30,
   "pages": [
     // ------------------------------ Q1 ------------------------------
     {
