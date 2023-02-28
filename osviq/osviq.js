@@ -1,13 +1,12 @@
-jatos.onLoad(function () { 
+jatos.onLoad(function () {
     const survey = new Survey.Model(json);
     survey.locale = "fr";
     survey
         .onComplete
         .add(
-            function (result) {
+            function () {
                 $("#osviq").hide(); // Hides the 'Thank you for completing ...' message
-                jatos.startNextComponent(result.data);
+                jatos.startNextComponent(survey.data);
             });
-    $("#osviq").Survey({model: survey});
-    jatos.addAbortButton();
+    $("#osviq").Survey({ model: survey });
 });
