@@ -1,4 +1,4 @@
-#simi{
+#simi {
     --primary: #007753;
     --background: #d6d6d642;
     --background-dim: #ffffff;
@@ -8,6 +8,6 @@
     --foreground-light: #444444;
     --base-unit: 8px;
     text-align: left;
-        }
-/* You can add your custom css here.*/
+}
 
+/* You can add your custom css here.*/
