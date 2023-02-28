@@ -1,4 +1,4 @@
-jatos.onLoad(function () { 
+jatos.onLoad(function () {
     const survey = new Survey.Model(json);
     survey.locale = "fr";
     survey
@@ -8,7 +8,7 @@ jatos.onLoad(function () {
                 $("#demo").hide(); // Hides the 'Thank you for completing ...' message
                 jatos.startNextComponent(result.data);
             });
-    $("#demo").Survey({model: survey});
-    jatos.addAbortButton();
+    $("#demo").Survey({ model: survey });
+    // jatos.addAbortButton();
 });
 
