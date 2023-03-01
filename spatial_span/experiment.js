@@ -38,23 +38,34 @@ var randomDraw = function (lst) {
 
 var setStims = function () {
   curr_seq = []
-  stim_array = []
-  time_array = []
-  var nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-  var last_num = 0
-  for (var i = 0; i < num_digits; i++) {
-    var num = randomDraw(nums.filter(function (x) { return Math.abs(x - last_num) > 2 }))
-    last_num = num
-    curr_seq.push(num)
-    stim_array.push('<div class = centerbox><div class = digit-span-text>' + num.toString() +
-      '</div></div>')
+  stim_array = [first_grid]
+  time_array = [1000]
+  var spaces = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+  var last_space = 0
+  for (var i = 0; i < num_spaces; i++) {
+    var space = randomDraw(spaces.filter(function (x) { return x != last_space }))
+    last_space = space
+    stim_grid = '<div class = numbox>'
+    for (var j = 1; j < 26; j++) {
+      if (j == space) {
+        stim_grid += '<button id = button_' + j +
+          ' class = "square red" ><div class = content></div></button>'
+      } else {
+        stim_grid += '<button id = button_' + j +
+          ' class = "square"><div class = content></div></button>'
+      }
+    }
+    stim_grid += '</div>'
+    curr_seq.push(space)
+    stim_array.push(stim_grid)
     time_array.push(stim_time)
   }
-  total_time = num_digits * (stim_time + gap_time)
+  console.log(stim_array)
+  total_time = num_spaces * (stim_time) + 1000
 }
 
 var getTestText = function () {
-  return '<div class = centerbox><div class = center-text>' + num_digits + ' Chiffres</p></div>'
+  return '<div class = centerbox><div class = center-text>' + num_spaces + ' Blocs</p></div>'
 }
 
 var getStims = function () {
@@ -74,14 +85,12 @@ var getFeedback = function () {
 }
 
 var recordClick = function (elm) {
-  response.push(Number($(elm).text()))
+  response.push(Number($(elm).attr('id').slice(7)))
 }
 
 var clearResponse = function () {
   response = []
 }
-
-
 
 /* ************************************ */
 /* Define experimental variables */
@@ -93,32 +102,31 @@ var sumInstructTime = 0 //ms
 var instructTimeThresh = 0 ///in seconds
 
 // task specific variables
-var num_digits = 3
+var num_spaces = 3
 var num_trials = 14
 var curr_seq = []
-var stim_time = 800
-var gap_time = 200
+var stim_time = 1000
 var time_array = []
 var total_time = 0
 var errors = 0
 var error_lim = 3
 var response = []
+var enter_grid = ''
+var first_grid = '<div class = numbox>'
+for (var i = 1; i < 26; i++) {
+  first_grid += '<button id = button_' + i +
+    ' class = "square" onclick = "recordClick(this)"><div class = content></div></button>'
+}
+var response_grid = '<div class = numbox>'
+for (var i = 1; i < 26; i++) {
+  response_grid += '<button id = button_' + i +
+    ' class = "click_square" onclick = "recordClick(this)"><div class = content></div></button>'
+}
+response_grid +=
+  '<button class = clear_button id = "ClearButton" onclick = "clearResponse()">Réinitialiser</button>' +
+  '<button class = submit_button id = "SubmitButton">Confirmer</button></div>'
 setStims()
 var stim_array = getStims()
-
-var response_grid =
-  '<div class = numbox>' +
-  '<button id = button_1 class = "square num-button" onclick = "recordClick(this)"><div class = content><div class = numbers>1</div></div></button>' +
-  '<button id = button_2 class = "square num-button" onclick = "recordClick(this)"><div class = content><div class = numbers>2</div></div></button>' +
-  '<button id = button_3 class = "square num-button" onclick = "recordClick(this)"><div class = content><div class = numbers>3</div></div></button>' +
-  '<button id = button_4 class = "square num-button" onclick = "recordClick(this)"><div class = content><div class = numbers>4</div></div></button>' +
-  '<button id = button_5 class = "square num-button" onclick = "recordClick(this)"><div class = content><div class = numbers>5</div></div></button>' +
-  '<button id = button_6 class = "square num-button" onclick = "recordClick(this)"><div class = content><div class = numbers>6</div></div></button>' +
-  '<button id = button_7 class = "square num-button" onclick = "recordClick(this)"><div class = content><div class = numbers>7</div></div></button>' +
-  '<button id = button_8 class = "square num-button" onclick = "recordClick(this)"><div class = content><div class = numbers>8</div></div></button>' +
-  '<button id = button_9 class = "square num-button" onclick = "recordClick(this)"><div class = content><div class = numbers>9</div></div></button>' +
-  '<button class = clear_button id = "Réinitialiser" onclick = "clearResponse()">Clear</button>' +
-  '<button class = submit_button id = "SubmitButton">Confirmer</button></div>'
 
 /* ************************************ */
 /* Set up jsPsych blocks */
@@ -155,7 +163,7 @@ var post_task_block = {
 
 /* define static blocks */
 var feedback_instruct_text =
-  "Vous allez désormais passer la tâche d'empan de chiffres. Cette tâche va durer moins de 5 minutes. Appuyez sur <strong>Entrée</strong> pour commencer les instructions."
+  'Vous allez désormais passer la tâche des blocs de Corsi. Cette tâche va durer moins de 5 minutes. Appuyez sur <strong>Entrée</strong> pour commencer les instructions.'
 var feedback_instruct_block = {
   type: 'poldrack-text',
   cont_key: [13],
@@ -173,7 +181,7 @@ var instructions_block = {
     trial_id: "instruction"
   },
   pages: [
-    "<div class = centerbox><p class = block-text>Dans cette tâche, vous devrez essayer de vous souvenir d'une séquence de chiffres qui apparaîtront à l'écran les uns après les autres. À la fin de chaque essai, entrez tous les chiffres dans le pavé numérique présenté, dans l'ordre <strong>inverse</strong> dans lequel ils sont apparus. Ainsi, le dernier chiffre doit être le premier dans votre réponse, l'avant-dernier doit être le deuxième dans votre réponse, etc. Faites de votre mieux pour mémoriser les chiffres, mais ne les écrivez pas et n'utilisez aucun autre outil externe pour vous aider à les retenir.</p><p class = block-text>Appuyez sur le bouton ci-dessous pour commencer l'expérience.</p></div>"
+    "<div class = centerbox><p class = block-text>Dans cette tâche, vous verrez une grille de blocs qui clignoteront en vert un par un. Vous devez vous souvenir de l'ordre dans lequel les blocs ont clignoté en vert. À la fin de chaque essai, inscrivez la séquence dans la grille dans l'ordre <strong>inverse</strong> de ce qui vous a été présenté. Ainsi, le dernier bloc doit être le premier dans votre réponse, l'avant-dernier doit être le deuxième dans votre réponse, etc. Faites de votre mieux pour mémoriser la séquence, mais ne l'écrivez pas et n'utilisez aucun autre outil externe pour vous aider à vous en souvenir.</p><p class = block-text></p><p class = block-text>Appuyez sur le bouton ci-dessous pour commencer l'expérience. </p></div>"
   ],
   allow_keys: false,
   show_clickable_nav: true,
@@ -204,11 +212,11 @@ var instruction_node = {
 
 var end_block = {
   type: 'poldrack-text',
-  timing_response: 180000,
   data: {
     trial_id: "end",
-    exp_id: 'digit_span'
+    exp_id: 'spatial_span'
   },
+  timing_response: 180000,
   text: "<div class = centerbox><p class = center-block-text>Cette tâche est terminée !</p><p class = center-block-text>Appuyez sur <strong>Entrée</strong> pour continuer l'expérience.</p></div>",
   cont_key: [13],
   timing_post_trial: 0
@@ -231,15 +239,15 @@ var start_test_block = {
 
 var start_reverse_block = {
   type: 'poldrack-text',
-  timing_response: 180000,
   data: {
-    trial_id: "start_reverse"
+    trial_id: "start_reverse_intro"
   },
+  timing_response: 180000,
   text: '<div class = centerbox><p class = block-text>In these next trials, instead of reporting back the sequence you just saw, report the <strong>reverse</strong> of that sequence. So the last item should be first in your response, the second to last should be the second in your response, etc...</p><p class = block-text>Press <strong>enter</strong> to begin.</p></div>',
   cont_key: [13],
   on_finish: function () {
     errors = 0
-    num_digits = 3
+    num_spaces = 3
     stims = setStims()
   }
 }
@@ -250,20 +258,19 @@ var test_block = {
   stimuli: getStims,
   is_html: true,
   timing_stim: getTimeArray,
-  timing_gap: gap_time,
   choices: [
     ['none']
   ],
   data: {
     trial_id: "stim",
-    exp_stage: 'test'
+    exp_stage: "test"
   },
   timing_response: getTotalTime,
   timing_post_trial: 0,
   on_finish: function () {
     jsPsych.data.addDataToLastTrial({
       "sequence": curr_seq,
-      "num_digits": num_digits
+      "num_spaces": num_spaces
     })
   }
 }
@@ -275,26 +282,26 @@ var forward_response_block = {
   button_class: 'submit_button',
   data: {
     trial_id: "response",
-    exp_stage: 'test'
+    exp_stage: "test"
   },
   on_finish: function () {
     jsPsych.data.addDataToLastTrial({
       "response": response.slice(),
       "sequence": curr_seq,
-      "num_digits": num_digits,
+      "num_spaces": num_spaces,
       "condition": "forward"
     })
     var correct = false
     // staircase
     if (arraysEqual(response, curr_seq)) {
-      num_digits += 1
+      num_spaces += 1
       feedback = '<span style="color:green">Correct !</span>'
       stims = setStims()
       correct = true
     } else {
       errors += 1
-      if (num_digits > 1 && errors == 2) {
-        num_digits -= 1
+      if (num_spaces > 1 && errors == 2) {
+        num_spaces -= 1
         errors = 0
       }
       feedback = '<span style="color:red">Incorrect</span>'
@@ -314,26 +321,26 @@ var reverse_response_block = {
   button_class: 'submit_button',
   data: {
     trial_id: "response",
-    exp_stage: 'test'
+    exp_stage: "test"
   },
   on_finish: function () {
     jsPsych.data.addDataToLastTrial({
       "response": response.slice(),
       "sequence": curr_seq,
-      "num_digits": num_digits,
+      "num_spaces": num_spaces,
       "condition": "reverse"
     })
     var correct = false
     // staircase
     if (arraysEqual(response.reverse(), curr_seq)) {
-      num_digits += 1
+      num_spaces += 1
       feedback = '<span style="color:green">Correct !</span>'
       stims = setStims()
       correct = true
     } else {
       errors += 1
-      if (num_digits > 1 && errors == 2) {
-        num_digits -= 1
+      if (num_spaces > 1 && errors == 2) {
+        num_spaces -= 1
         errors = 0
       }
       feedback = '<span style="color:red">Incorrect</span>'
@@ -351,7 +358,8 @@ var feedback_block = {
   type: 'poldrack-single-stim',
   stimulus: getFeedback,
   data: {
-    trial_id: "feedback"
+    trial_id: "feedback",
+    exp_stage: "test"
   },
   is_html: true,
   choices: 'none',
@@ -361,12 +369,12 @@ var feedback_block = {
 }
 
 /* create experiment definition array */
-var digit_span_experiment = [];
-digit_span_experiment.push(instruction_node);
+var spatial_span_experiment = [];
+spatial_span_experiment.push(instruction_node);
 for (i = 0; i < num_trials; i++) {
-  digit_span_experiment.push(start_test_block)
-  digit_span_experiment.push(test_block)
-  digit_span_experiment.push(reverse_response_block)
-  digit_span_experiment.push(feedback_block)
+  spatial_span_experiment.push(start_test_block)
+  spatial_span_experiment.push(test_block)
+  spatial_span_experiment.push(reverse_response_block)
+  spatial_span_experiment.push(feedback_block)
 }
-digit_span_experiment.push(end_block)
+spatial_span_experiment.push(end_block)
