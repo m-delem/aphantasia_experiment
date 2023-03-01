@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class=''>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name="robots" content="noindex">
+    <title>The Experiment Factory: Digit Span</title>
+
+    <link rel='stylesheet' type='text/css' href='digit_span/jspsych.css'>
+    <link rel='stylesheet' type='text/css' href='digit_span/default_style.css'>
+    <link rel='stylesheet' type='text/css' href='digit_span/style.css'>
+    <script src="jatos.js"></script>
+</head>
+
+<body>
+    <script src='digit_span/js/jquery.min.js'></script>
+    <script src='digit_span/js/math.min.js'></script>
+    <script src='digit_span/js/jspsych/jspsych.js'></script>
+    <script src='digit_span/js/jspsych/plugins/jspsych-text.js'></script>
+    <script src='digit_span/js/jspsych/poldrack_plugins/jspsych-poldrack-text.js'></script>
+    <script src='digit_span/js/jspsych/poldrack_plugins/jspsych-poldrack-instructions.js'></script>
+    <script src='digit_span/js/jspsych/poldrack_plugins/jspsych-attention-check.js'></script>
+    <script src='digit_span/js/jspsych/poldrack_plugins/jspsych-poldrack-multi-stim-multi-response.js'></script>
+    <script src='digit_span/js/jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js'></script>
+    <script src='digit_span/js/jspsych/plugins/jspsych-survey-text.js'></script>
+    <script src='digit_span/js/jspsych/poldrack_plugins/jspsych-single-stim-button.js'></script>
+    <script src='digit_span/js/jspsych/poldrack_plugins/poldrack_utils.js'></script>
+    <script src='digit_span/experiment.js'></script>
+
+
+    <script>
+        jatos.onLoad(() => {
+            $(document).ready(function () {
+
+                jsPsych.init({
+                    timeline: digit_span_experiment,
+                    display_element: "getDisplayElement",
+                    fullscreen: true,
+                    on_trial_finish: function (data) {
+                        addID('digit-span')
+                    },
+
+                    on_finish: function (data) {
+
+                        // Serialize the data
+                        var promise = new Promise(function (resolve, reject) {
+                            var data = jsPsych.data.dataAsJSON();
+                            resolve(data)
+                        });
+                        jatos.startNextComponent(data)
+
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
