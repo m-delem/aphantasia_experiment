@@ -1,4 +1,4 @@
-#consent{
+#consent {
     --primary: #007753;
     --background: #d6d6d642;
     --background-dim: #ffffff;
@@ -6,6 +6,6 @@
     --primary-foreground: #ffffff;
     --foreground: #000000;
     --base-unit: 8px;
-        }
-/* You can add your custom css here.*/
+}
 
+/* You can add your custom css here.*/
