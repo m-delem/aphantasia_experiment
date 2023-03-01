@@ -117,7 +117,7 @@ var response_grid =
   '<button id = button_7 class = "square num-button" onclick = "recordClick(this)"><div class = content><div class = numbers>7</div></div></button>' +
   '<button id = button_8 class = "square num-button" onclick = "recordClick(this)"><div class = content><div class = numbers>8</div></div></button>' +
   '<button id = button_9 class = "square num-button" onclick = "recordClick(this)"><div class = content><div class = numbers>9</div></div></button>' +
-  '<button class = clear_button id = "Réinitialiser" onclick = "clearResponse()">Clear</button>' +
+  '<button class = clear_button id = "Réinitialiser" onclick = "clearResponse()">Réinitialiser</button>' +
   '<button class = submit_button id = "SubmitButton">Confirmer</button></div>'
 
 /* ************************************ */
