@@ -1,4 +1,4 @@
-# EMC Lab. Aphantasia Study : Experimental Files
+# EMC Lab. Aphantasia Study : Experiment Code
 
 All the code used for the 2023 EMC Lab. internet-based questionnaires and experiment about visual imagery and aphantasia.
 
