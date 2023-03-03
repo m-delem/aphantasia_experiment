@@ -1,0 +1,60 @@
+mcq_pos_1 
+Le fait de m’inquiéter m’aide à éviter des problèmes qui pourraient survenir.
+mcq_dan_1 
+Le fait de m’inquiéter est dangereux pour moi.
+mcq_self_1 
+Je réfléchis beaucoup sur mes pensées.
+mcq_dan_2 
+Le fait de m’inquiéter pourrait me rendre malade.
+mcq_self_2 
+Je suis conscient.e de la façon dont mon esprit fonctionne quand j’examine un problème en détail.
+mcq_sup_1 
+Si je ne contrôlais pas une pensée inquiétante et puis qu’elle arrivait, je considérerais que c’est de ma faute.
+mcq_pos_2 
+J’ai besoin de me tracasser pour rester organisé.e.
+mcq_conf_1 
+J’ai peu confiance en ma mémoire pour les mots et pour les noms.
+mcq_dan_3 
+Mes inquiétudes persistent, malgré mes tentatives de les arrêter.
+mcq_pos_3 
+L’inquiétude m’aide à mettre de l’ordre dans ma tête.
+mcq_dan_4
+Je ne peux pas ignorer mes inquiétudes.
+mcq_self_3
+Je surveille mes pensées.
+mcq_sup_2 
+Je devrais garder en permanence le contrôle sur mes pensées
+mcq_conf_2 
+Ma mémoire peut parfois m’induire en erreur.
+mcq_dan_5 
+Mon inquiétude pourrait me rendre fou (folle).
+mcq_self_4 
+Je suis en permanence conscient.e de mes pensées. 
+mcq_conf_3 
+J’ai une mauvaise mémoire. 
+mcq_self_5 
+Je prête beaucoup d’attention à la façon dont mon esprit fonctionne.
+mcq_pos_4 
+L’inquiétude m’aide à m’adapter aux choses.
+mcq_sup_3 
+Le fait de ne pas pouvoir contrôler mes pensées est un signe de faiblesse.
+mcq_sup_4 
+Si je ne contrôlais pas mes pensées, je ne serais pas capable de fonctionner.
+mcq_dan_6 
+Quand je commence à me tracasser, je ne peux pas m’arrêter.
+mcq_sup_5 
+Je serai puni.e pour ne pas avoir contrôlé certaines pensées.
+mcq_pos_5 
+Le fait de m’inquiéter m’aide à résoudre les problèmes.
+mcq_conf_4 
+J’ai peu confiance en ma mémoire pour les lieux.
+mcq_sup_6 
+Ce n’est pas bien d’avoir certaines pensées. 
+mcq_conf_5 
+Je n’ai pas confiance en ma mémoire.
+mcq_pos_6 
+Pour bien travailler, j’ai besoin de m’inquiéter.
+mcq_conf_6 
+J’ai peu confiance en ma mémoire pour les actions. 
+mcq_self_6 
+J’examine constamment mes pensées.
