@@ -8,7 +8,7 @@ const json = {
         {
           "type": "html",
           "name": "question2",
-          "html": "<p style=\"text-align: justify;\"><span id=\"page628R_mcid3\" style=\"font-size: 14pt;\"><span dir=\"ltr\" role=\"presentation\">Nous sommes int&eacute;ress&eacute;s par les croyances que les gens ont concernant leurs pens&eacute;es. Vous&nbsp;</span><span dir=\"ltr\" role=\"presentation\">trouverez ci-dessous un certain nombre de croyances ; veuillez lire chacune de ces croyances et&nbsp;</span><span dir=\"ltr\" role=\"presentation\">indiquer dans quelle mesure vous &ecirc;tes</span> <span dir=\"ltr\" role=\"presentation\">en g&eacute;n&eacute;ral d&rsquo;accord, en entourant la r&eacute;ponse appropri&eacute;e.</span></span></p>\n<h4 style=\"text-align: justify;\"><span style=\"font-size: 14pt;\"><span id=\"page628R_mcid4\"><span dir=\"ltr\" role=\"presentation\">Veuillez r&eacute;pondre &agrave; toutes les phrases, il n&rsquo;y a pas de bonnes ou de mauvaises r&eacute;ponses.</span></span>&nbsp;</span></h4>"
+          "html": "<p style=\"text-align: justify;\"><span id=\"page628R_mcid3\" style=\"font-size: 14pt;\"><span dir=\"ltr\" role=\"presentation\">Nous sommes int&eacute;ress&eacute;s par les croyances que les gens ont concernant leurs pens&eacute;es. Vous&nbsp;</span><span dir=\"ltr\" role=\"presentation\">trouverez ci-dessous un certain nombre de croyances ; veuillez lire chacune de ces croyances et&nbsp;</span><span dir=\"ltr\" role=\"presentation\">indiquer dans quelle mesure vous &ecirc;tes</span> <span dir=\"ltr\" role=\"presentation\">en g&eacute;n&eacute;ral d&rsquo;accord, en entourant la r&eacute;ponse appropri&eacute;e.</span></span></p>\n<h4 style=\"text-align: justify;\"><span style=\"font-size: 14pt;\"><span id=\"page628R_mcid4\"><span dir=\"ltr\" role=\"presentation\">Veuillez r&eacute;pondre &agrave; toutes les phrases - encore une fois, il n&rsquo;y a pas de bonnes ou de mauvaises r&eacute;ponses.</span></span>&nbsp;</span></h4>"
         },
         {
           "type": "matrix",
@@ -244,6 +244,7 @@ const json = {
             }
           ],
           "alternateRows": true,
+          //"isAllRowRequired: true"
         }
       ]
     }

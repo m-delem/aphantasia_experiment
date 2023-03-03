@@ -1,0 +1,30 @@
+sri_manip_1       # subscales are from Lyon et al. 
+sri_nav_1         # mental manipulation (or mental rotation)
+sri_image_1       # spatial navigation (or spatial orientation)
+sri_manip_2       # imagery  (spatial visualization)
+sri_nav_2
+sri_image_2
+sri_manip_3
+sri_nav_3
+sri_image_3
+sri_manip_4
+sri_nav_4
+sri_image_4
+sri_manip_5
+sri_nav_5
+sri_image_5
+sri_manip_6
+sri_nav_6
+sri_image_6
+sri_manip_7
+sri_nav_7
+sri_image_7
+sri_manip_8
+sri_nav_8
+sri_image_8
+sri_manip_9
+sri_nav_9
+sri_image_9
+sri_manip_10
+sri_nav_10
+sri_image_10

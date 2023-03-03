@@ -8,12 +8,12 @@ const json = {
       "elements": [
         {
           "type": "html",
-          "name": "question5",
+          "name": "page_wason",
           "html": "<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<h2>Voici une courte t&acirc;che de raisonnement.</h2>\n<p><span style=\"font-size: 14pt;\">Quatre cartes comportant un chiffre sur une face et une couleur sur l'autre sont dispos&eacute;es &agrave; plat sur une table. Une seule face de chaque carte est visible. Les faces visibles sont les suivantes : 9, 8, bleue, et orange.</span></p>\n</div>"
         },
         {
           "type": "image",
-          "name": "question1",
+          "name": "img_wason",
           "titleLocation": "hidden",
           "imageLink": "wason/wason.png",
           "imageHeight": 300,

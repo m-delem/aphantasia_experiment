@@ -16,7 +16,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_1",
+          "name": "sri_manip_1",
           "title": "Laquelle des images ci-dessous montre l’illustration des deux chiens après avoir été tournée de 90 degrés vers la droite ?",
           //"isRequired": true,
           "correctAnswer": "b",
@@ -56,7 +56,7 @@ const json = {
         },
         {
           "type": "radiogroup",
-          "name": "sri_2",
+          "name": "sri_nav_1",
           "title": "De quel côté se situe le pot de fleurs du point de vue de Julie ?",
           //"isRequired": true,
           "correctAnswer": "À sa droite",
@@ -79,7 +79,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_3",
+          "name": "sri_image_1",
           "title": "Laquelle des illustrations ci-dessous montre ce que Jeanne verra en dépliant la feuille ?",
           //"isRequired": true,
           "correctAnswer": "c",
@@ -119,7 +119,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_4",
+          "name": "sri_manip_2",
           "title": "Laquelle des images ci-dessous montre le résultat de cette rotation ?",
           "imageHeight": "200px",
           //"isRequired": true,
@@ -159,7 +159,7 @@ const json = {
         },
         {
           "type": "radiogroup",
-          "name": "sri_5",
+          "name": "sri_nav_2",
           "title": "La danseuse a un bras tendu. \ De quel bras s’agit-il ?",
           //"isRequired": true,
           "correctAnswer": "Son bras gauche",
@@ -185,7 +185,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_6",
+          "name": "sri_image_2",
           "title": "Laquelle des figures ci-dessous montre la forme que la boîte aurait une fois repliée ?",
           //"isRequired": true,
           "correctAnswer": "c",
@@ -225,7 +225,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_7",
+          "name": "sri_manip_3",
           "title": "On a fait tourner la figure dans le sens des aiguilles d’une montre (vers la droite). Laquelle des illustrations ci-dessous montre une position possible de la figure après sa rotation ?",
           //"isRequired": true,
           "correctAnswer": "a",
@@ -265,7 +265,7 @@ const json = {
         },
         {
           "type": "radiogroup",
-          "name": "sri_8",
+          "name": "sri_nav_3",
           "title": "Le hamster a couru dans le labyrinthe. Il a d’abord tourné à sa droite, puis à sa gauche, puis encore à sa droite. Vis-à-vis quelle lettre le hamster s’est-il rendu ?",
           //"isRequired": true,
           "correctAnswer": "R",
@@ -292,7 +292,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_9",
+          "name": "sri_image_3",
           "title": "Laquelle des illustrations ci-dessous représenterait le mieux ce que l’on obtiendrait si l’on dépliait la boîte ?",
           //"isRequired": true,
           "correctAnswer": "c",
@@ -332,7 +332,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_10",
+          "name": "sri_manip_4",
           "title": "Laquelle des illustrations ci-dessous représente une rotation de ce bloc de bois ?",
           //"isRequired": true,
           "correctAnswer": "b",
@@ -372,7 +372,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_11",
+          "name": "sri_nav_4",
           "title": "À quoi ressemble la forme du point de vue de Kim ?",
           //"isRequired": true,
           "correctAnswer": "a",
@@ -412,7 +412,7 @@ const json = {
         },
         {
           "type": "radiogroup",
-          "name": "sri_12",
+          "name": "sri_image_4",
           "title": "Si l’on repliait le cube, lequel de ses côtés toucherait au côté MN ?",
           //"isRequired": true,
           "correctAnswer": "Le côté QR",
@@ -439,7 +439,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_13",
+          "name": "sri_manip_5",
           "title": "Laquelle des images ci-dessous montre le résultat de cette rotation ?",
           //"isRequired": true,
           "correctAnswer": "a",
@@ -479,7 +479,7 @@ const json = {
         },
         {
           "type": "radiogroup",
-          "name": "sri_14",
+          "name": "sri_nav_5",
           "title": "Sur le plan de la classe ci-dessous, qui occupe la position marquée par la lettre A ?",
           //"isRequired": true,
           "correctAnswer": "Paule",
@@ -507,7 +507,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_15",
+          "name": "sri_image_5",
           "title": "Où Jacques a-t-il percé les deux trous dans la feuille pliée ?",
           //"isRequired": true,
           "correctAnswer": "c",
@@ -547,7 +547,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_16",
+          "name": "sri_manip_6",
           "title": "Laquelle des illustrations ci-dessous montre une rotation de cette bicyclette ?",
           //"isRequired": true,
           "correctAnswer": "d",
@@ -587,7 +587,7 @@ const json = {
         },
         {
           "type": "radiogroup",
-          "name": "sri_17",
+          "name": "sri_nav_6",
           "title": "Le hamster a couru dans le labyrinthe. Il a d’abord tourné à sa droite, puis à sa gauche, puis encore à sa droite. Vis-à-vis quelle lettre le hamster s’est-il rendu ?",
           //"isRequired": true,
           "correctAnswer": "P",
@@ -615,7 +615,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_18",
+          "name": "sri_image_6",
           "title": "Laquelle des illustrations ci-dessous montre ce que l’on obtiendrait en repliant le cube ?",
           //"isRequired": true,
           "correctAnswer": "c",
@@ -655,7 +655,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_19",
+          "name": "sri_manip_7",
           "title": "Lequel des dessins ci-dessous représente une rotation de cette illustration ?",
           //"isRequired": true,
           "correctAnswer": "c",
@@ -695,7 +695,7 @@ const json = {
         },
         {
           "type": "radiogroup",
-          "name": "sri_20",
+          "name": "sri_nav_7",
           "title": "Quelle tortue est située immédiatement derrière Moya dans la course ?",
           //"isRequired": true,
           "correctAnswer": "Alfred",
@@ -723,7 +723,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_21",
+          "name": "sri_image_7",
           "title": "Laquelle des illustrations ci-dessous montre l’image miroir de la flèche par rapport à la ligne pointillée ?",
           //"isRequired": true,
           "correctAnswer": "b",
@@ -763,7 +763,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_22",
+          "name": "sri_manip_8",
           "title": "Lequel des modèles ci-dessous est identique au modèle ci-dessus ?",
           //"isRequired": true,
           "correctAnswer": "c",
@@ -803,7 +803,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_23",
+          "name": "sri_nav_8",
           "title": "Laquelle des illustrations ci-dessous représente ce modèle vu de dessus ?",
           //"isRequired": true,
           "correctAnswer": "c",
@@ -843,7 +843,7 @@ const json = {
         },
         {
           "type": "radiogroup",
-          "name": "sri_24",
+          "name": "sri_image_8",
           "title": "Combien de lignes de symétrie cette image possède-t-elle ?",
           //"isRequired": true,
           "correctAnswer": "0",
@@ -870,7 +870,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_25",
+          "name": "sri_manip_9",
           "title": "Lequel des modèles ci-dessous est identique au modèle ci-dessus ?",
           //"isRequired": true,
           "correctAnswer": "b",
@@ -910,7 +910,7 @@ const json = {
         },
         {
           "type": "radiogroup",
-          "name": "sri_26",
+          "name": "sri_nav_9",
           "title": "Quelle lettre indique la localisation de la librairie sur le dessin de Nabila ?",
           //"isRequired": true,
           "correctAnswer": "R",
@@ -937,7 +937,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_27",
+          "name": "sri_image_9",
           "title": "Quelle illustration ci-dessous représente la forme du bord du cube de pâte à modeler une fois la coupe terminée ?",
           //"isRequired": true,
           "correctAnswer": "d",
@@ -977,7 +977,7 @@ const json = {
         },
         {
           "type": "radiogroup",
-          "name": "sri_28",
+          "name": "sri_manip_10",
           "title": "Quel pavillon est situé au coin des avenues Ellendale et Decelles ?",
           //"isRequired": true,
           "correctAnswer": "Chirurgie",
@@ -1004,7 +1004,7 @@ const json = {
         },
         {
           "type": "radiogroup",
-          "name": "sri_29",
+          "name": "sri_nav_10",
           "title": "Sur quelle rue Jean se trouve-t-il après son trajet ?",
           //"isRequired": true,
           "correctAnswer": "Rue Deshaies",
@@ -1031,7 +1031,7 @@ const json = {
         },
         {
           "type": "imagepicker",
-          "name": "sri_30",
+          "name": "sri_image_10",
           "title": "Laquelle des illustrations ci-dessous montre une image miroir de la goutte d’eau par rapport à la ligne pointillée ?",
           //"isRequired": true,
           "correctAnswer": "a",

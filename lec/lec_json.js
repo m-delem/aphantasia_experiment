@@ -7,12 +7,12 @@ const json = {
       "elements": [
         {
           "type": "html",
-          "name": "question1",
+          "name": "page_lec1",
           "html": "<h2 style=\"text-align: center;\"><span style=\"color: rgb(0, 119, 83);\">Article 1</span></h2>\n<h2 style=\"text-align: center;\"><span style=\"font-size: 14pt;\">La grande barri&egrave;re de corail mise en p&eacute;ril par le charbon<br></span></h2>\n<p style=\"text-align: center;\"><span style=\"font-size: 10pt; color: rgb(126, 140, 141);\">LE MONDE&nbsp;|&nbsp;16.07.2012&nbsp; Par&nbsp;Morgane Le Mo&euml;l ((Gladstone) </span></p>"
         },
         {
           "type": "image",
-          "name": "question2",
+          "name": "art_lec1",
           "imageLink": "lec/art_1.jpg"
         }
       ]
@@ -158,12 +158,12 @@ const json = {
       "elements": [
         {
           "type": "html",
-          "name": "question3",
+          "name": "page_lec2",
           "html": "<h2 style=\"text-align: center;\"><span style=\"color: rgb(0, 119, 83);\">Article 2<br></span></h2>\n<h2 style=\"text-align: center;\">La grande barri&egrave;re de corail a perdu la moiti&eacute; de ses coraux depuis 1985<span style=\"font-size: 14pt;\">&nbsp;</span></h2>\n<p style=\"text-align: center;\"><span style=\"font-size: 10pt; color: rgb(126, 140, 141);\">Le Monde.fr avec AFP | 02.10.2012</span></p>"
         },
         {
           "type": "image",
-          "name": "question4",
+          "name": "art_lec2",
           "imageLink": "lec/art_2.jpg"
         }
       ]
@@ -259,12 +259,12 @@ const json = {
       "elements": [
         {
           "type": "html",
-          "name": "question5",
+          "name": "page_lec3",
           "html": "<h2 style=\"text-align: center;\"><span style=\"color: rgb(0, 119, 83);\">Article 3<br></span></h2>\n<h2 style=\"text-align: center;\">Pourquoi la surp&ecirc;che des requins menace les coraux</h2>\n<p style=\"text-align: center;\"><span style=\"font-size: 10pt; color: rgb(126, 140, 141);\">Le Monde.fr avec AFP | 24.09.2013 par Audrey Garric<br></span></p>"
         },
         {
           "type": "image",
-          "name": "question6",
+          "name": "art_lec3",
           "imageLink": "lec/art_3.jpg"
         }
       ]
