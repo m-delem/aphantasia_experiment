@@ -6,7 +6,7 @@ const json = {
       "elements": [
         {
           "type": "matrix",
-          "title": "Pensez à un parent ou à un ami que vous voyez souvent<br> (mais qui n'est pas avec vous en ce moment), et considérez attentivement l'image qui vous vient à l'esprit. Évaluez ensuite les éléments suivants :",
+          "title": "Pensez à un parent ou à un ami que vous voyez souvent (mais qui n'est pas avec vous en ce moment), et considérez attentivement l'image qui vous vient à l'esprit. Évaluez ensuite les éléments suivants :",
           //"titleLocation": "hidden",
           "name": "vviq",
           "columns": [{
