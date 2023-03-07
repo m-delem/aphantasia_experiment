@@ -18,7 +18,7 @@ const json = {
       ]
     },
     {
-      "name": "page4",
+      "name": "page2",
       "elements": [
         {
           "type": "checkbox",
@@ -154,7 +154,17 @@ const json = {
       "description": "Répondez aux questions suivantes avec précision : certaines peuvent nécessiter plusieurs réponses."
     },
     {
-      "name": "page2",
+      "name": "page3",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question1",
+          "html": "<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"css: row.getRowCss()\">\n<div data-bind=\"css: question.koCss().questionWrapper, style: $data.rootStyle, event: {focusin: question.focusIn }\">\n<div id=\"sq_101\" role=\"textbox\" data-bind=\"css: question.koRootCss(), style: { paddingLeft: question.paddingLeft, paddingRight: question.paddingRight }, attr: { id: question.id, 'data-name': question.name, role: question.ariaRole, 'aria-required': question.ariaRequired, 'aria-invalid': question.ariaInvalid, 'aria-labelledby': question.ariaLabelledBy}\" data-name=\"presentation\" aria-required=\"false\" aria-invalid=\"false\">\n<div role=\"presentation\" data-bind=\"visible: !question.isCollapsed, css: question.cssContent\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<h2><span style=\"color: rgb(0, 119, 83); font-size: 18pt;\">Premier texte termin&eacute; !</span></h2>\n<span style=\"font-size: 14pt;\">Cliquez sur le bouton ci-dessous pour passer au deuxi&egrave;me. Prenez une courte pause si vous en ressentez le besoin.</span></div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>"
+        }
+      ]
+    },
+    {
+      "name": "page4",
       "elements": [
         {
           "type": "html",
@@ -255,7 +265,17 @@ const json = {
       "description": "Répondez aux questions suivantes avec précision : certaines peuvent nécessiter plusieurs réponses."
     },
     {
-      "name": "page3",
+      "name": "page6",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question2",
+          "html": "<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"css: row.getRowCss()\">\n<div data-bind=\"css: question.koCss().questionWrapper, style: $data.rootStyle, event: {focusin: question.focusIn }\">\n<div id=\"sq_101\" role=\"textbox\" data-bind=\"css: question.koRootCss(), style: { paddingLeft: question.paddingLeft, paddingRight: question.paddingRight }, attr: { id: question.id, 'data-name': question.name, role: question.ariaRole, 'aria-required': question.ariaRequired, 'aria-invalid': question.ariaInvalid, 'aria-labelledby': question.ariaLabelledBy}\" data-name=\"presentation\" aria-required=\"false\" aria-invalid=\"false\">\n<div role=\"presentation\" data-bind=\"visible: !question.isCollapsed, css: question.cssContent\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<h2><span style=\"color: rgb(0, 119, 83); font-size: 18pt;\">Deuxi&egrave;me texte termin&eacute; !</span></h2>\n<span style=\"font-size: 14pt;\">Cliquez sur le bouton ci-dessous pour passer au dernier texte. Prenez une courte pause si vous en ressentez le besoin.</span></div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>"
+        }
+      ]
+    },
+    {
+      "name": "page7",
       "elements": [
         {
           "type": "html",
@@ -270,7 +290,7 @@ const json = {
       ]
     },
     {
-      "name": "page6",
+      "name": "page8",
       "elements": [
         {
           "type": "comment",
@@ -378,6 +398,16 @@ const json = {
         }
       ],
       "description": "Répondez aux questions suivantes avec précision : certaines peuvent nécessiter plusieurs réponses."
+    },
+    {
+      "name": "page9",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question3",
+          "html": "<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"css: row.getRowCss()\">\n<div data-bind=\"css: question.koCss().questionWrapper, style: $data.rootStyle, event: {focusin: question.focusIn }\">\n<div id=\"sq_101\" role=\"textbox\" data-bind=\"css: question.koRootCss(), style: { paddingLeft: question.paddingLeft, paddingRight: question.paddingRight }, attr: { id: question.id, 'data-name': question.name, role: question.ariaRole, 'aria-required': question.ariaRequired, 'aria-invalid': question.ariaInvalid, 'aria-labelledby': question.ariaLabelledBy}\" data-name=\"presentation\" aria-required=\"false\" aria-invalid=\"false\">\n<div role=\"presentation\" data-bind=\"visible: !question.isCollapsed, css: question.cssContent\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">\n<h2><span style=\"color: rgb(0, 119, 83); font-size: 18pt;\">T&acirc;che de compr&eacute;hension termin&eacute;e !</span></h2>\n</div>\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\"><span style=\"font-size: 14pt;\">L'ultime &eacute;tape de cette &eacute;tude sera une t&acirc;che de m&eacute;morisation proche des \"blocs de Corsi\" pass&eacute;s plus t&ocirc;t.&nbsp;Prenez une pause si vous en ressentez le besoin. </span></div>\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\">&nbsp;</div>\n<div data-bind=\"html: question.locHtml.koRenderedHtml, css: question.koCss().root\"><span style=\"font-size: 14pt;\">Vous pouver cliquer sur le bouton ci-dessous pour passer &agrave; la&nbsp;derni&egrave;re t&acirc;che !<br></span></div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>"
+        }
+      ]
     }
   ],
   "showPrevButton": false,
