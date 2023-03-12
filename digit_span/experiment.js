@@ -173,7 +173,7 @@ var instructions_block = {
     trial_id: "instruction"
   },
   pages: [
-    "<div class = centerbox><p class = block-text>Dans cette tâche, vous devrez essayer de vous souvenir d'une séquence de chiffres qui apparaîtront à l'écran les uns après les autres. À la fin de chaque essai, entrez tous les chiffres dans le pavé numérique présenté, dans l'ordre <strong>inverse</strong> dans lequel ils sont apparus. Ainsi, le dernier chiffre doit être le premier dans votre réponse, l'avant-dernier doit être le deuxième dans votre réponse, etc. Faites de votre mieux pour mémoriser les chiffres, mais ne les écrivez pas et n'utilisez aucun autre outil externe pour vous aider à les retenir.</p><p class = block-text>Appuyez sur le bouton ci-dessous pour commencer l'expérience.</p></div>"
+    "<div class = centerbox><p class = block-text>Dans cette tâche, vous devrez essayer de vous souvenir d'une séquence de chiffres qui apparaîtront à l'écran les uns après les autres. À la fin de chaque essai, entrez tous les chiffres dans le pavé numérique présenté, dans l'ordre <strong>inverse</strong> dans lequel ils sont apparus. Ainsi, le dernier chiffre doit être le premier dans votre réponse, l'avant-dernier doit être le deuxième dans votre réponse, etc.</p><p class = block-text>Si la séquence suivante vous est présentée : 7 - 3 - 4 - 1,</p><p class = block-text>Vous devrez donc taper sur le pavé numérique la réponse : 1 - 4 - 3 - 7.</p><p class = block-text>Faites de votre mieux pour mémoriser les chiffres, mais ne les écrivez pas et n'utilisez aucun autre outil externe pour vous aider à les retenir.</p><p class = block-text>Appuyez sur le bouton ci-dessous pour commencer l'expérience.</p></div>"
   ],
   allow_keys: false,
   show_clickable_nav: true,

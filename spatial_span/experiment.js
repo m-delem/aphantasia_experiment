@@ -181,7 +181,7 @@ var instructions_block = {
     trial_id: "instruction"
   },
   pages: [
-    "<div class = centerbox><p class = block-text>Dans cette tâche, vous verrez une grille de blocs qui clignoteront en vert un par un. Vous devez vous souvenir de l'ordre dans lequel les blocs ont clignoté en vert. À la fin de chaque essai, inscrivez la séquence dans la grille dans l'ordre <strong>inverse</strong> de ce qui vous a été présenté. Ainsi, le dernier bloc doit être le premier dans votre réponse, l'avant-dernier doit être le deuxième dans votre réponse, etc. Faites de votre mieux pour mémoriser la séquence, mais ne l'écrivez pas et n'utilisez aucun autre outil externe pour vous aider à vous en souvenir.</p><p class = block-text></p><p class = block-text>Appuyez sur le bouton ci-dessous pour commencer l'expérience. </p></div>"
+    "<div class = centerbox><p class = block-text>Dans cette tâche, vous verrez une grille de blocs qui clignoteront en vert un par un. Vous devez vous souvenir de l'ordre dans lequel les blocs ont clignoté en vert. À la fin de chaque essai, inscrivez la séquence dans la grille dans l'ordre <strong>inverse</strong> de ce qui vous a été présenté.</p><p class = block-text>Ainsi, si une séquence de quatre blocs vous est présentée, vous devrez répondre en cliquant sur le quatrième à avoir clignoté, puis le troisième, le deuxième, et finir par le premier.</p><p class = block-text>Faites de votre mieux pour mémoriser la séquence, mais ne l'écrivez pas et n'utilisez aucun autre outil externe pour vous aider à vous en souvenir.</p><p class = block-text>Appuyez sur le bouton ci-dessous pour commencer l'expérience. </p></div>"
   ],
   allow_keys: false,
   show_clickable_nav: true,
