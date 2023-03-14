@@ -27,23 +27,23 @@ const json = {
           "hideNumber": true,
           "choices": [
             {
-              "value": "tempere_oceanique",
+              "value": "1",
               "text": "Entre une zone tempérée et une zone océanique"
             },
             {
-              "value": "sud_australie",
+              "value": "2",
               "text": "Dans le sud de l'Australie"
             },
             {
-              "value": "queensland",
+              "value": "3",
               "text": "Dans le Queensland, en Australie"
             },
             {
-              "value": "tempere_tropicale",
+              "value": "4",
               "text": "Entre une zone tempérée et une zone tropicale"
             },
             {
-              "value": "pres_australie",
+              "value": "5",
               "text": "Près de l'Australie"
             }
           ]
@@ -55,23 +55,23 @@ const json = {
           "hideNumber": true,
           "choices": [
             {
-              "value": "yeux_rouges",
+              "value": "1",
               "text": "Yeux rouges"
             },
             {
-              "value": "ulceres",
+              "value": "2",
               "text": "Ulcères"
             },
             {
-              "value": "yeux_enfles",
+              "value": "3",
               "text": "Yeux enflés"
             },
             {
-              "value": "taches_ecailles",
+              "value": "4",
               "text": "Tâches sur les écailles"
             },
             {
-              "value": "ouies_blanches",
+              "value": "5",
               "text": "Ouïes blanches"
             }
           ]
@@ -95,23 +95,23 @@ const json = {
           "hideNumber": true,
           "choices": [
             {
-              "value": "pecheurs",
+              "value": "1",
               "text": "Les pêcheurs"
             },
             {
-              "value": "chercheurs",
+              "value": "2",
               "text": "Les chercheurs"
             },
             {
-              "value": "mineurs",
+              "value": "3",
               "text": "Les mineurs"
             },
             {
-              "value": "agents",
+              "value": "4",
               "text": "Les agents de voyages"
             },
             {
-              "value": "hoteliers",
+              "value": "5",
               "text": "Les hôteliers"
             }
           ]
@@ -129,23 +129,23 @@ const json = {
           "hideNumber": true,
           "choices": [
             {
-              "value": "mines",
+              "value": "1",
               "text": "Il y a des mines de charbon"
             },
             {
-              "value": "eau_polluee",
+              "value": "2",
               "text": "L'eau est polluée"
             },
             {
-              "value": "pas_hotels",
+              "value": "3",
               "text": "Il n'y a pas d'hôtels de luxe"
             },
             {
-              "value": "gbc_loin",
+              "value": "4",
               "text": "C'est loin de la grande barrière de corail"
             },
             {
-              "value": "pas_touristique",
+              "value": "5",
               "text": "Cette ville n'appartient pas à une région touristique"
             }
           ]
@@ -194,23 +194,23 @@ const json = {
           "hideNumber": true,
           "choices": [
             {
-              "value": "protecc_algues",
+              "value": "1",
               "text": "Protection des algues"
             },
             {
-              "value": "tempetes",
+              "value": "2",
               "text": "Action sur les tempêtes"
             },
             {
-              "value": "protecc_especes_marines",
+              "value": "3",
               "text": "Protection des espèces marines"
             },
             {
-              "value": "rechauff_climatique",
+              "value": "4",
               "text": "Contrôle du réchauffement climatique"
             },
             {
-              "value": "acanthaster",
+              "value": "5",
               "text": "Lutte contre l'acanthaster"
             }
           ]
@@ -228,23 +228,23 @@ const json = {
           "hideNumber": true,
           "choices": [
             {
-              "value": "predateur_corail",
+              "value": "1",
               "text": "Un prédateur du corail"
             },
             {
-              "value": "algue",
+              "value": "2",
               "text": "Une algue"
             },
             {
-              "value": "etoile_mer",
+              "value": "3",
               "text": "Une étoile de mer"
             },
             {
-              "value": "eendangered_species",
+              "value": "4",
               "text": "Une espèce en danger"
             },
             {
-              "value": "plante_epines",
+              "value": "5",
               "text": "Une plante avec des épines"
             }
           ]
@@ -311,23 +311,23 @@ const json = {
           "hideNumber": true,
           "choices": [
             {
-              "value": "consequence_peche",
+              "value": "1",
               "text": "Pour comparer les conséquences de la pêche des requins"
             },
             {
-              "value": "influence_pollution",
+              "value": "2",
               "text": "Pour que l'influence humaine en termes de pollution soit imperceptible"
             },
             {
-              "value": "influence_habitants",
+              "value": "3",
               "text": "Pour ne pas être influencés par les habitants"
             },
             {
-              "value": "pas_pecheurs",
+              "value": "4",
               "text": "Pour qu'il n'y ait pas de pêcheurs"
             },
             {
-              "value": "neutralite",
+              "value": "5",
               "text": "Pour comparer des écosystèmes en toute neutralité"
             }
           ]
@@ -351,23 +351,23 @@ const json = {
           "hideNumber": true,
           "choices": [
             {
-              "value": "partout",
+              "value": "1",
               "text": "Partout"
             },
             {
-              "value": "reserves_marines",
+              "value": "2",
               "text": "Dans les réserves marines"
             },
             {
-              "value": "recifs_scott",
+              "value": "3",
               "text": "Dans les récifs de Scott"
             },
             {
-              "value": "n_e_australie",
+              "value": "4",
               "text": "Dans le nord-est de l'Australie"
             },
             {
-              "value": "zones_non_protecc",
+              "value": "5",
               "text": "Dans les zones où ils ne sont pas protégés"
             }
           ]
@@ -379,19 +379,19 @@ const json = {
           "hideNumber": true,
           "choices": [
             {
-              "value": "empecher_declin",
+              "value": "1",
               "text": "Pour empêcher le déclin des requins"
             },
             {
-              "value": "proteger_vivano",
+              "value": "2",
               "text": "Pour protéger les vivaneaux"
             },
             {
-              "value": "preserv_algues",
+              "value": "3",
               "text": "Pour préserver les algues"
             },
             {
-              "value": "survie_mangeurs_alg",
+              "value": "4",
               "text": "Pour permettre la survie d'espèces mangeuses d'algues"
             }
           ]
